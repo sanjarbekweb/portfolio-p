@@ -38,6 +38,12 @@ const works = [
 		tags: ['Fullstack', 'Development'],
 		projectLink: 'https://github.com/sanjarbekweb/auth-fullstack',
 	},
+		{
+		imgSrc: '/images/project-6.jpg',
+		title: 'Zentry',
+		tags: ['Frontend', 'GSAP'],
+		projectLink: 'https://zentry-clone-lilac.vercel.app/',
+	}
 ]
 
 const Work = () => {
