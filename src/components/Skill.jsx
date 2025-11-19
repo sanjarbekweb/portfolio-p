@@ -28,6 +28,11 @@ const skillItem = [
 		desc: 'Node Framework',
 	},
 	{
+		imgSrc: '/images/nest.png',
+		label: 'NestJS',
+		desc: 'Node Framework',
+	},
+	{
 		imgSrc: '/images/mongodb.svg',
 		label: 'MongoDB',
 		desc: 'Database',
@@ -63,7 +68,7 @@ const Skill = () => {
 	return (
 		<section className='section'>
 			<div className='container'>
-				<div className="w-full">
+				<div className='w-full'>
 					<h2 className='headline-2 reveal-up'>Essential Tools I use</h2>
 
 					<p className='text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up'>
@@ -72,19 +77,19 @@ const Skill = () => {
 					</p>
 				</div>
 
-
-				<div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]" data-aos="fade-up">
-					{
-						skillItem.map(({ imgSrc, label, desc }, key) => (
-							<SkillCard
-								key={key}
-								imgSrc={imgSrc}
-								label={label}
-								desc={desc}
-								classes='reveal-up'
-							/>
-						))
-					}
+				<div
+					className='grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]'
+					data-aos='fade-up'
+				>
+					{skillItem.map(({ imgSrc, label, desc }, key) => (
+						<SkillCard
+							key={key}
+							imgSrc={imgSrc}
+							label={label}
+							desc={desc}
+							classes='reveal-up'
+						/>
+					))}
 				</div>
 			</div>
 		</section>
